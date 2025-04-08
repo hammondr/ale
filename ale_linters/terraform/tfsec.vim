@@ -31,7 +31,7 @@ function! ale_linters#terraform#tfsec#Handle(buffer, lines) abort
         \   'lnum': l:result.location.start_line,
         \   'end_lnum': l:result.location.end_line,
         \   'text': l:result.description,
-        \   'code': l:result.long_id,
+        \   'code': l:result.rule_id,
         \   'type': l:type,
         \})
     endfor
